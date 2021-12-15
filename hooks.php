@@ -26,6 +26,6 @@ function dynadot_hook_check_update() {
 	return $notice;
 }
 
-//logModuleCall( 'dynadot', 'update', 'hook file loaded');
+logModuleCall( 'dynadot', 'update', 'hook file loaded');
 
 add_hook( "AdminHomepage", 1, "dynadot_hook_check_update" );
